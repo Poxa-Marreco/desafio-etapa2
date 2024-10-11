@@ -1,12 +1,12 @@
 package desafio_estacionamento;
 
-class GeradorDeTicket {
+public class GeradorDeTicketOld {
     private int numeroDoTicket;
     private final double valorDoTicket;
     private boolean estaPago;
     private double receitaTotal;
 
-    public GeradorDeTicket(double valorDoTicket) {
+    public GeradorDeTicketOld(double valorDoTicket) {
         this.valorDoTicket = valorDoTicket;
         this.numeroDoTicket = 1;
         this.estaPago = false;
@@ -37,7 +37,7 @@ class GeradorDeTicket {
     }
 
     public static void main(String[] args) {
-        GeradorDeTicket maquina = new GeradorDeTicket(10.0); // Inicialize com um valor fixo de ticket de 10.0
+        geradorDeTicket maquina = new geradorDeTicket(10.0); // Inicialize com um valor fixo de ticket de 10.0
 
         maquina.emitirTicket();
         maquina.pagarTicket(15.0);
